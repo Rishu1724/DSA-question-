@@ -1,4 +1,4 @@
-package Dynamic;
+// package Dynamic;
 
 public class Knapsack {
     public static int kanpSack(int val[], int wt[],int w, int n){
