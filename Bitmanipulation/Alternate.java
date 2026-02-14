@@ -15,7 +15,7 @@ public class Alternate {
         
         
         */
-        int l = n>>2;
+        int l = n<<1;
         int m = n^2;
         int o = n&2;
         int p = n|2;
