@@ -14,6 +14,8 @@ public class Build {
         }
     }
 
+    // this is the function insertion of node in the tree 
+
     public static Node insertTree(Node root, int val) {
         if (root == null) {
             root = new Node(val);
@@ -29,6 +31,7 @@ public class Build {
 
     }
 
+    // SEARCHING OF THE KEY IN THE NODE
     static boolean TreeSearch(Node root, int key) {
         if (root == null) {
             return false;
@@ -45,6 +48,8 @@ public class Build {
 
     }
 
+
+        // THIS IS THE INORDER FUCTION 
     static void inorder(Node root) {
         if (root == null) {
             return;

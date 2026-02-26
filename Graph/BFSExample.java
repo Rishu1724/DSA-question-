@@ -4,7 +4,7 @@ public class BFSExample {
 
     public static void bfs(ArrayList<ArrayList<Integer>> graph, int start) {
         
-        boolean[] visited = new boolean[graph.size()];
+        boolean[] visited = new boolean[graph.size()];// it will store the visited value of the node
         Queue<Integer> queue = new LinkedList<>();
 
         // Mark start node as visited and add to queue

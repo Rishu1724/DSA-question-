@@ -11,6 +11,14 @@ public class sizeoflargestBST {
             this.max= max;
         }
     }
+    public static int maxBST = 0;
+
+    
+
+
+
+
+
     public static void main(String args[]){
 
     }
