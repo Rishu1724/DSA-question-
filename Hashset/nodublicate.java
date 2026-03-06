@@ -8,6 +8,8 @@ public static void main(String args[]){
     hs.add(4);
     hs.add(4);
     hs.add(9);
+    hs.add(9);
+    hs.add(9);
     
 
     System.out.println("this is the HashSet value" +hs);

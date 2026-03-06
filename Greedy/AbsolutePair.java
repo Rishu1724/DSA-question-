@@ -8,7 +8,8 @@ public class AbsolutePair{
         Arrays.sort(b);
         int minDiff =0;
         for(int i=0; i <a.length;i++){
-            minDiff +=Math.abs(a[i]- b[i]);
+            minDiff +=Math.abs(a[i]- b[i]);// this is the (abs) function for finding absolute value
+            
         }
         System.out.println("min absolute diff of pairs = " + minDiff);
 

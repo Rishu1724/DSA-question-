@@ -14,7 +14,6 @@ class Indiancoins{
                     ans.add(coins[i]);
                     amount -=coins[i];
                 }
-            
         }
         System.out.println("this is the min coin used = " +countCoins);
     }
