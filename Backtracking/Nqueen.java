@@ -8,13 +8,38 @@ public class Nqueen {
             printBoard(board);
             return;
         }
-        //column loop ;
+        //column loop;
         for(int j=0; j<board.length;j++){
             board[row][j] ='Q';
             nQueens(board,row+1);// function call
             board[row][j] ='x';// Backtracking step
         }
     }
+    public static boolean isSafe( char board[][], int row, int col){
+         // vertical up 
+        for(int i = row-1; i>=0;i--){
+            if(board[i][col]=='Q'){
+                return false;
+            }
+        }
+        // diag left up 
+        for(int i=row-1,j=col-1; i>=0 && j>=0; i--,j-- ){
+            if(board[i][j]=='Q'){
+                return false;
+            }
+        }
+        // diag right up 
+        for(int i = row-1, j=col+1; i>=0 && j<board.length; i--,j++){
+            if(board[i][j]=='Q'){
+                return false;
+            }
+        }
+
+        return true;
+
+    }
+       
+    
     public static void printBoard(char board[][]){
         for(int i=0; i<board.length; i++){
             for(int j=0; j<board.length; j++){
@@ -24,7 +49,7 @@ public class Nqueen {
         }
     }
     public static void main(String args[]){
-        int n=2;
+        int n=4;
         char board[][] = new char[n][n];
         //initialize;
         for(int i=0; i<n; i++){
@@ -33,6 +58,9 @@ public class Nqueen {
             }
         }
         nQueens(board,0);
+        isSafe(board,4,4);
+        printBoard(board);
+
 
     }
 }
