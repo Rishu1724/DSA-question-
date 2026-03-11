@@ -71,27 +71,25 @@ public class Creategraph {
                 for(int i=0; i<graph[curr].size(); i++){
                     Edge e = graph[curr].get(i);
                     q.add(e.dest);
-
                 }
                 System.out.println();
             }
-
         }
     }
     
 
-    public static void dfs(ArrayList<Edge> graph[],int curr, boolean vis[]){
-        // visit
-        System.out.print(curr+" ");
-        vis[curr] = true;
+    // public static void dfs(ArrayList<Edge> graph[],int curr, boolean vis[]){
+    //     // visit
+    //     System.out.print(curr+" ");
+    //     vis[curr] = true;
 
-        for(int i =0; i<graph[curr].size();i++){
-            Edge e= graph[curr].get(i);
-            if(!vis[e.dest]){
-                dfs(graph,e.dest,vis);
-            }
-        }
-    }
+    //     for(int i =0; i<graph[curr].size();i++){
+    //         Edge e= graph[curr].get(i);
+    //         if(!vis[e.dest]){
+    //             dfs(graph,e.dest,vis);
+    //         }
+    //     }
+    // }
 
     public static void main(String args[]) {
         int v = 7;
@@ -100,6 +98,6 @@ public class Creategraph {
         createGraph(graph);
         printGraph(graph);
         bfs(graph);
-        dfs(graph,0,new boolean[v]);
+        // dfs(graph,0,new boolean[v]);
     }
 }
