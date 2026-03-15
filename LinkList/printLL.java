@@ -15,7 +15,7 @@ public class printLL {
     Node head;
 
     public void add(int idx, int data) {
-        Node newNode = new Node(data);
+        Node newNode = new Node(data);//Node is the class and the newNode is the object 
 
         if (idx == 0) {
             newNode.next = head;

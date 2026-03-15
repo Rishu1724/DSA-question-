@@ -8,6 +8,9 @@ class Node {
         this.next = null;
     }
 }
+    public void reverse(Node head){
+        
+ }
 
 public class reverseLL {
 
