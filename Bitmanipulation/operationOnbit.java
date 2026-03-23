@@ -65,5 +65,8 @@ public class operationOnbit {
         System.out.println(updateIthbit(10, 2, 1));
         System.out.println(isPowerOftwo(7));
         System.out.println(countSetbit(10));
+        int r =2, s=4;
+        boolean res = (r>2 && s<3);
+        System.out.println(res);
     }
 }
