@@ -6,7 +6,7 @@ public class LowestcommonAnc {
         Node left;
         Node right;
 
-        Node(int data) {
+        Node(int data) {// constructor 
             this.data = data;
             this.left = null;
             this.right = null;
