@@ -2,7 +2,7 @@ class Node{
     int data;
     Node left,right;
 
-    Node(int d){
+    Node(int d){// constructor 
         data = d;
         left = null;
         right = null ;
