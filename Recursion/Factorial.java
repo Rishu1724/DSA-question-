@@ -2,7 +2,7 @@ public class Factorial {
 
     public static int findRecur(int n){
         if(n == 1){
-            return 1;
+            return n;
         }
         else{
             return n * findRecur(n - 1);
