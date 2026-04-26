@@ -24,6 +24,3 @@ public class climbngstairs {
         int number = 5;
     }
 }
-git add .
-git commit -m " this is new file"
-git push origin main
