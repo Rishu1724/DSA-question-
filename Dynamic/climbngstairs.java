@@ -1,7 +1,7 @@
 public class climbngstairs {
     public static int stairs(int n){
         int[] dp= new int[n+1];
-        return helper(n,dp);
+        return helper(n,dp);// helper function call 
 
 
     }
@@ -17,6 +17,7 @@ public class climbngstairs {
             return dp[n];
         }
         return helper(n-1, dp)+ helper(n-2,dp);// this is the helper function 
+        // add this also 
 
     }
 
