@@ -7,8 +7,8 @@ public class catalannumber {
         if(n==0 || n==1){
             return 1;
         }
-        for(int i =0;i <n-1; i++){
-            ans += catalan(i)* catalan(n-i-1);
+        for(int i =0;i <n; i++){
+            ans += catalan(i)* catalan(n-i-1); // <-- this is the last value and the first value 
         }
         return ans;
 
