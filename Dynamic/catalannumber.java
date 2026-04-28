@@ -3,6 +3,7 @@ public class catalannumber {
         // int c0=1;
         // int c1=1;
         int ans = 0;
+        // this is the base case 
         if(n==0 || n==1){
             return 1;
         }
