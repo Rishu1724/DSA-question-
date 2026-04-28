@@ -18,6 +18,6 @@ public class catalMono {
     }
     public static void main(String[] args) {
         int n=4;
-
+        System.out.println(cat(n));
     }
 }
