@@ -12,7 +12,7 @@ class Node {
         
  }
 
-public class reverseLL {
+public class reverseLL {// new function we are adding 
 
     public static void main(String args[]) {
 
