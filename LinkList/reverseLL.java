@@ -8,11 +8,15 @@ class Node {
         this.next = null;
     }
 }
-    public void reverse(Node head){
-        
- }
+
 
 public class reverseLL {// new function we are adding 
+
+        public void reverse(Node head){
+        if(head == null){
+            return ;
+        }
+ }
 
     public static void main(String args[]) {
 
