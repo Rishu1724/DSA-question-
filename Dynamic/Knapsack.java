@@ -4,12 +4,12 @@ public class Knapsack {
         if (w == 0 || n == 0) {
             return 0;
         }
-        if (wt[n - 1] <= w) {
+        if (wt[n - 1] <= w) { // iteam ka index wo kaha hai
             int ans1 = val[n - 1] + kanpSack(val, wt, w - wt[n - 1], n - 1);
             int ans2 = kanpSack(val, wt, w, n - 1);
             return Math.max(ans1, ans2);
         } else {
-            return kanpSack(val, wt, w, n - 1);
+            return kanpSack(val, wt, w, n - 1);// when wt is more 
         }
     }
     public static void main(String args[]) {
