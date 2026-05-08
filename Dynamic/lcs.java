@@ -1,4 +1,5 @@
 public class lcs {
+    // recursive code ;
     public static int longestcs(String str1, String str2, int n , int m){
         // base case
         if(m==0 || n==0){
@@ -15,7 +16,7 @@ public class lcs {
     }
     public static void main(String[] args){
         String str1 = "abcdge";
-        String str2 = "abedg";// ans will be 4;
+        String str2 = "abe";// ans will be 4;
         System.out.println(longestcs(str1,str2,str1.length(),str2.length()));
     }
 }
