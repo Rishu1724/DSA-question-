@@ -16,6 +16,7 @@ public class Knapsack {
         int val[] = { 15, 14, 10, 45, 30 };// value 
         int wt[] = { 2, 5, 1, 3, 4 }; // weight 
         int w = 7;// capacity 
-        System.out.println(kanpSack(val, wt, w, val.length));
+        int n = val.length;
+        System.out.println(kanpSack(val, wt, w,n));
     }
 }

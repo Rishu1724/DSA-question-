@@ -30,5 +30,5 @@ public class Minimum_partitioning {
     public static void main(String[] args) {
         int arr[] = {1, 6, 11, 5};
         System.out.print(partition(arr));
-    }
+    };
 }
