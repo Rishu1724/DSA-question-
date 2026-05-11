@@ -2,15 +2,15 @@ import java.util.*;
 
 public class BFSExample {
 
-    // public static void bfs(ArrayList<ArrayList<Integer>> graph){
-    //     boolean[] visited = new boolean[graph.size()];
+    public static void bfs(ArrayList<ArrayList<Integer>> graph){
+        boolean[] visited = new boolean[graph.size()];
 
-    //     for(int i = 0; i < graph.size(); i++){
-    //         if(!visited[i]){
-    //             bfsutil(graph, i, visited);
-    //         }
-    //     }
-    // }
+        for(int i = 0; i < graph.size(); i++){
+            if(!visited[i]){
+                bfsutil(graph, i, visited);
+            }
+        }
+    }
 
     public static void bfsutil(ArrayList<ArrayList<Integer>> graph, int start, boolean[] visited) {
         

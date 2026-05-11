@@ -9,6 +9,7 @@ public class Minimum_partitioning {
         for (int i = 0; i < n; i++) {
             sum += arr[i];
         }
+        
 
         int W = sum / 2;
         int dp[][] = new int[n + 1][W + 1];
