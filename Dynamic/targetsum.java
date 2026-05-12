@@ -17,11 +17,21 @@ public class targetsum {
                     {
                         dp[i][j]=true;
                 }
+                
             }
             
         }
+        printdp(dp);
         return dp[n][sum];
         
+    }
+    public static void printdp(boolean dp[][]){
+        for(int i =0;i <dp.length;i++){
+            for(int j=0;j<dp[0].length;j++){
+                System.out.println(dp[i][j]);
+            }
+        }
+        System.out.println();
     }
 
 
