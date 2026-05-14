@@ -8,7 +8,7 @@ public class lcsub {
 
         // bottom up
         // its a tabulation code without recursion
-        
+
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= m; j++){
                 if(strn1.charAt(i-1) == str2.charAt(j-1)){
@@ -23,8 +23,8 @@ public class lcsub {
     }
 
     public static void main(String args[]){
-        String strn1 = "ABCDE";
-        String str2 = "ABGCE";
+        String strn1 = "ABCD";
+        String str2 = "ABCEFD";
 
         System.out.print(longCs(strn1, str2));
     }

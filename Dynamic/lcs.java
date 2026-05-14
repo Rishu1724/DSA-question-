@@ -1,3 +1,6 @@
+// YE LONGEST COMMON SUBSUQUESCE KA QUESTOIN HAI 
+
+
 public class lcs {
     // recursive code ;
     public static int longestcs(String str1, String str2, int n , int m){
