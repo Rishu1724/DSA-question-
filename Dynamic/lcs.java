@@ -9,7 +9,7 @@ public class lcs {
             return 0;
         }
         if(str1.charAt(n-1)== str2.charAt(m-1)){// --> this n-1 and m-1 is matching from the last charactor
-            return longestcs(str1, str2,n-1,m-1)+1;
+            return longestcs(str1, str2,n-1,m-1)+1;//
         }
         else{
             int ans1 = longestcs(str1, str2,n-1,m);
