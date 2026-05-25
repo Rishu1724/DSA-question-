@@ -28,7 +28,7 @@ public class practice {
         int n =170;
 
         // System.out.println(n%10);
-        System.out.println(n/10);
+        System.out.println(n%10);
         // sumArray(arr);
 
     }
