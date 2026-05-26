@@ -25,34 +25,34 @@ public class Creategraph {
         // Adding edges (Undirected Graph Example)
 
         graph[0].add(new Edge(0, 1, 1));
-        graph[0].add(new Edge(0, 2, 3));
+        graph[0].add(new Edge(0, 2, 1));
 
         graph[1].add(new Edge(1, 0, 1));
-        graph[1].add(new Edge(1, 3, 4));
+        graph[1].add(new Edge(1, 3, 1));
 
-        graph[2].add(new Edge(2, 0, 3));
-        graph[2].add(new Edge(2, 4, 2));
+        graph[2].add(new Edge(2, 0, 1));
+        graph[2].add(new Edge(2, 4, 1));
 
-        graph[3].add(new Edge(3, 1, 4));
-        graph[3].add(new Edge(3, 4, 5));
-        graph[3].add(new Edge(3, 5, 6));
+        graph[3].add(new Edge(3, 1, 1));
+        graph[3].add(new Edge(3, 4, 1));
+        graph[3].add(new Edge(3, 5, 1));
 
-        graph[4].add(new Edge(4, 2, 2));
-        graph[4].add(new Edge(4, 3, 5));
-        graph[4].add(new Edge(4, 5, 7));
+        graph[4].add(new Edge(4, 2, 1));
+        graph[4].add(new Edge(4, 3, 1));
+        graph[4].add(new Edge(4, 5, 1));
 
-        graph[5].add(new Edge(5, 3, 6));
-        graph[5].add(new Edge(5, 4, 7));
-        graph[5].add(new Edge(5, 6, 8));
+        graph[5].add(new Edge(5, 3, 1));
+        graph[5].add(new Edge(5, 4, 1));
+        graph[5].add(new Edge(5, 6, 1));
 
-        graph[6].add(new Edge(6, 5, 8));
+        graph[6].add(new Edge(6, 5, 1));
     }
 
     // Print Graph
     static void printGraph(ArrayList<Edge> graph[]) {
-        for (int i = 0; i < graph.length; i++) {
+        for (int i = 0; i < graph.length; i++) {// this is the length of the graph bcs it is a array 
             System.out.print("Vertex " + i + " -> ");
-            for (int j = 0; j < graph[i].size(); j++) {
+            for (int j = 0; j < graph[i].size(); j++) {// this is the arrayList edge
                 Edge e = graph[i].get(j);
                 System.out.print("(" + e.dest + ", wt=" + e.wt + ") ");
             }
@@ -84,9 +84,9 @@ public class Creategraph {
         vis[curr] = true;
 
         for(int i =0; i<graph[curr].size();i++){
-            Edge e= graph[curr].get(i);
+            Edge e= graph[curr].get(i);// getting every edge ;
             if(!vis[e.dest]){
-                dfs(graph,e.dest,vis);
+                dfs(graph,e.dest,vis);// yaha pe curr ko e.dest kar rhe hai;
             }
         }
     }
@@ -98,6 +98,6 @@ public class Creategraph {
         createGraph(graph);
         printGraph(graph);
         bfs(graph);
-        // dfs(graph,0,new boolean[v]);
+        dfs(graph,0,new boolean[v]);
     }
 }
