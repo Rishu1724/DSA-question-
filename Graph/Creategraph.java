@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Creategraph {
-
+// edge class 
     static class Edge {
         int src;
         int dest;
@@ -92,7 +92,7 @@ public class Creategraph {
     }
 
     public static void main(String args[]) {
-        int v = 7;
+        int v = 7;// number of node
         ArrayList<Edge> graph[] = new ArrayList[v];
 
         createGraph(graph);
