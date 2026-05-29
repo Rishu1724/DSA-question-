@@ -62,7 +62,7 @@ public class Creategraph {
     public static void bfs(ArrayList<Edge> graph[]){
         Queue<Integer> q = new LinkedList<>();
         boolean vis[] = new boolean [graph.length];
-        q.add(0);// source = 0 we are taking 
+        q.add(0);// source = 0 we are taking // we can take anythings in the queue;
         while(!q.isEmpty()){
             int curr = q.remove();
             if(!vis[curr]){
@@ -72,7 +72,7 @@ public class Creategraph {
                     Edge e = graph[curr].get(i);
                     q.add(e.dest);
                 }
-                System.out.println();
+                System.out.println(); 
             }
         }
     }
