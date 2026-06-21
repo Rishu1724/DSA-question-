@@ -15,6 +15,7 @@ public class practice {
 
     // }
 
+
     public static void main(String args[]) {
         // int modulo = 1% 5;// it will give the remainder of the numbers
         // int div = 1 / 2; // it will give the quetiont of the number
@@ -26,6 +27,8 @@ public class practice {
         // System.out.println("this is the value of modulo =  " + modulo);
         // System.out.println("this is the value of modulo =  " + div);
         int n =170;
+        int m = 180;
+        
 
         // System.out.println(n%10);
         System.out.println(n%10);
