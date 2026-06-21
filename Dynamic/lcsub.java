@@ -1,3 +1,6 @@
+
+// YE SUBSTRING KA QUESTION HAI 
+
 public class lcsub {
     public static int longCs(String strn1, String str2){
         int n = strn1.length();
