@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class printsubarray{
     public static void Printsub(int arr[]){

@@ -7,7 +7,7 @@ public class Creategraph {
         int dest;
         int wt;
 
-        public Edge(int s, int d, int w) {
+        public Edge(int s, int d, int w) { // this is the constructor ;
             this.src = s;
             this.dest = d;
             this.wt = w;
@@ -59,6 +59,9 @@ public class Creategraph {
             System.out.println();
         }
     }
+
+    //bfs code start from here ;
+
     public static void bfs(ArrayList<Edge> graph[]){
         Queue<Integer> q = new LinkedList<>();
         boolean vis[] = new boolean [graph.length];
@@ -90,6 +93,8 @@ public class Creategraph {
             }
         }
     }
+
+    
 
     public static void main(String args[]) {
         int v = 7;// number of node

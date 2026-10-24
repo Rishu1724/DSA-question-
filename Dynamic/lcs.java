@@ -3,23 +3,42 @@
 
 public class lcs {
     // recursive code ;
-    public static int longestcs(String str1, String str2, int n , int m){
-        // base case
-        if(m==0 || n==0){
+    // public static int longestcs(String str1, String str2, int n , int m){
+    //     // base case
+    //     if(m==0 || n==0){
+    //         return 0;
+    //     }
+    //     if(str1.charAt(n-1)== str2.charAt(m-1)){// --> this n-1 and m-1 is matching from the last charactor
+    //         return longestcs(str1, str2,n-1,m-1)+1;//
+    //     }
+    //     else{
+    //         int ans1 = longestcs(str1, str2,n-1,m);
+    //         int ans2 = longestcs(str1,str2,n,m-1);
+    //         return Math.max(ans1,ans2);
+    //     }
+    // }
+    // memoization code
+    public static int longest(String str1,String str2,int n ,int m){
+        n=str1.length();
+        m =str2.length();
+        int dp[][] = new int[n+1][m+1];
+        // base case 
+        if(n==0 || m==0){
             return 0;
         }
-        if(str1.charAt(n-1)== str2.charAt(m-1)){// --> this n-1 and m-1 is matching from the last charactor
-            return longestcs(str1, str2,n-1,m-1)+1;//
+        if(str1.charAt(n-1)== str2.charAt(m-1)){
+            return dp[n-1][m-1]=longest(str1,str2,n-1,m-1);
         }
         else{
-            int ans1 = longestcs(str1, str2,n-1,m);
-            int ans2 = longestcs(str1,str2,n,m-1);
+            int ans1= longest(str1,str2,n-1,m);
+            int ans2 = longest(str1,str2,n,m-1);
             return Math.max(ans1,ans2);
         }
+
     }
     public static void main(String[] args){
         String str1 = "abcdge";
         String str2 = "abe";// ans will be 4;
-        System.out.println(longestcs(str1,str2,str1.length(),str2.length()));
+        System.out.println(longest(str1,str2,str1.length(),str2.length()));
     }
 }

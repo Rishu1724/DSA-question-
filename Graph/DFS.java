@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class DFS {
     // DFS function
     public static void dfs(ArrayList<ArrayList<Integer>> graph,
-                           int curr,
-                           boolean vis[]) {
+            int curr,
+            boolean vis[]) {
 
         // Mark current node as visited
         vis[curr] = true;
@@ -15,8 +15,9 @@ public class DFS {
             if (!vis[neighbor]) {
                 dfs(graph, neighbor, vis);
             }
-        }
+        } 
     }
+
     public static void main(String[] args) {
         int V = 5;
         ArrayList<ArrayList<Integer>> graph = new ArrayList<>();

@@ -7,7 +7,7 @@ public class BFSExample {
 
         for(int i = 0; i < graph.size(); i++){
             if(!visited[i]){
-                bfsutil(graph, i, visited);
+                bfsutil(graph, i, visited);// start from here start is 0 here;
             }
         }
     }
@@ -31,6 +31,7 @@ public class BFSExample {
             }
         }
     }
+    
 
     public static void main(String[] args) {
         

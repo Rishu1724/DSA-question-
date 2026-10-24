@@ -1,3 +1,4 @@
+// Node class will be seperate from the other class
 class Node{
     int data;
     Node left,right;
@@ -21,7 +22,7 @@ class Length {
     int rh = lenghtTree(root.right);
     int height = Math.max(lh,rh)+1;
     return height;
-}
+}₹
     public static void main(String args[]){
           Node root = new Node(12);
           root.left = new Node(14);
