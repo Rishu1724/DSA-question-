@@ -24,7 +24,7 @@ public class Createtree{
         // now we have to connect the node of the tree
         firstNode.left= secondNode;
         firstNode.right=thirdNode;
-        secondNode.left = forthNode;
+
     }
   
 }

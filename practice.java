@@ -26,12 +26,13 @@ public class practice {
         // // r =Array.sort(rishu);
         // System.out.println("this is the value of modulo =  " + modulo);
         // System.out.println("this is the value of modulo =  " + div);
-        int n =170;
+        int n =17;
         int m = 180;
         
 
         // System.out.println(n%10);
-        System.out.println(n%10);
+        System.out.println(n/10);
+        System.out.println(n);
         // sumArray(arr);
 
     }
