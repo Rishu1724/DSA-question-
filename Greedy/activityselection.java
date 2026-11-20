@@ -12,7 +12,9 @@ public class activityselection {
         ans.add(0);
         int lastEnd = end[0];
         for(int i=1;i<end.length;i++){
-            
+            if(start[i] >= lastEnd){
+                
+            }
         }
     }
 }
